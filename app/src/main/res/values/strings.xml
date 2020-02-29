@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">u-Con</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="ada_penawaran_menarik_nih">Ada Penawaran menarik nih</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_profile">Profile</string>
+    <string name="kuliner">Kuliner</string>
+    <string name="Pakaian">Pakaian</string>
+    <string name="Pertanian">Pertanian</string>
+    <string name="kerajinan_tangan">Kerajinan Tangan</string>
 </resources>
