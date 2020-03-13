@@ -1,12 +1,13 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cardview_wrapper"
-    android:layout_width="match_parent"
-    android:layout_height="154dp"
     android:orientation="vertical"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="4dp">
-
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:id="@+id/cardview_wrapper">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,20 +16,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="72dp"
             android:orientation="horizontal">
             <LinearLayout
-                android:layout_width="85dp"
+                android:layout_width="53dp"
                 android:layout_height="match_parent">
                 <ImageView
                     android:id="@+id/img_poster"
-                    android:layout_width="73dp"
-                    android:layout_height="73dp"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="12dp"
                     android:background="#C4C4C4" />
-
             </LinearLayout>
+
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
@@ -38,53 +39,51 @@
                     android:id="@+id/tvNameToko"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="21dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="12dp"
                     android:text="@string/rm_suka_maju"
                     android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
                 <TextView
                     android:layout_marginRight="30dp"
                     android:id="@+id/tvJalan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="21dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/jl_suka_mundur"
                     android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:gravity="center"
-            android:padding="8dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="54dp"
+            android:layout_height="30dp"
             android:background="@drawable/white_shape">
             <ImageView
-                android:layout_width="38dp"
-                android:layout_height="38dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:src="@drawable/ic_diskon"/>
             <TextView
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:text="@string/voucher_s_d"/>
             <TextView
-                android:id="@+id/tvDiskon"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25dp"
+                android:textSize="15sp"
                 android:text="@string/_75"/>
         </LinearLayout>
     </LinearLayout>

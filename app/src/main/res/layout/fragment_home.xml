@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:id="@+id/textView"
@@ -18,7 +20,7 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/rvPromo"
         android:layout_width="312dp"
         android:layout_height="154dp"
         android:layout_marginStart="24dp"
@@ -30,103 +32,125 @@
         tools:listitem="@layout/item_promo" />
 
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
+        card_view:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
         android:id="@+id/lyMakanan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="92dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/white_shape"
-        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView">
-
-        <ImageView
+        app:layout_constraintTop_toBottomOf="@+id/rvPromo">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="98dp"
-            android:background="#1111" />
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/img_food"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/kuliner"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/kuliner"
-            android:textAlignment="center" />
-    </LinearLayout>
-
-    <LinearLayout
+    <androidx.cardview.widget.CardView
+        card_view:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
         android:id="@+id/lyPakaian"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="92dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/white_shape"
-        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lyMakanan"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+        app:layout_constraintTop_toBottomOf="@+id/rvPromo">
 
-        <ImageView
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="98dp"
-            android:background="#1111" />
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/img_fashion"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/Pakaian"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Pakaian"
-            android:textAlignment="center"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
+    <androidx.cardview.widget.CardView
+        card_view:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
         android:id="@+id/lyPertanian"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="92dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/white_shape"
-        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lyPakaian">
 
-        <ImageView
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="98dp"
-            android:background="#1111" />
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/img_agriculture"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/Pertanian"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Pertanian"
-            android:textAlignment="center"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
+    <androidx.cardview.widget.CardView
+        card_view:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
         android:id="@+id/lyKerajinan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="92dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
+        android:gravity="center"
         android:background="@drawable/white_shape"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/lyPertanian"
         app:layout_constraintTop_toBottomOf="@id/lyPakaian">
 
-        <ImageView
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="98dp"
-            android:background="#1111" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/kerajinan_tangan"
-            android:textAlignment="center"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/img_craft"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/kerajinan_tangan"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

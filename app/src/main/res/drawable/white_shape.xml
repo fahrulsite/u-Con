@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <corners
-        android:bottomLeftRadius="25dp"
-        android:bottomRightRadius="25dp"
-        android:radius="25dp"
-        android:topLeftRadius="25dp"
-        android:topRightRadius="25dp"/>
+        android:topLeftRadius="20dp"
+        android:topRightRadius="20dp"/>
     <solid
         android:color="#ffffff"/>
-    <size
-        android:height="92dp"
-        android:width="158dp"/>
 </shape>
+

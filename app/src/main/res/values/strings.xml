@@ -13,4 +13,11 @@
     <string name="Pakaian">Pakaian</string>
     <string name="Pertanian">Pertanian</string>
     <string name="kerajinan_tangan">Kerajinan Tangan</string>
+    <string name="rm_sukamaju">RM. SUKAMAJU</string>
+    <string name="jl_suka_mundur">Jl, Suka Mundur</string>
+    <string name="voucher_s_d">Voucher s/d</string>
+    <string name="rm_suka_maju">RM Suka Maju</string>
+    <string name="rm_suka_maju">RM Suka Maju</string>
+    <string name="_75">75%</string>
+    <string name="ada_penawaran_menarik_di_dekat_saya">ada penawaran menarik di dekat saya</string>
 </resources>
